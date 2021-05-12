@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+    <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_2541707_lxu7bsdcmoe.css?spm=a313x.7781069.1998910419.407&file=font_2541707_lxu7bsdcmoe.css"/>
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_2541303_73w9irqbmcm.css"/>
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_2541041_rmp24a3xxqk.css"/>
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_2541010_bej765ezk6v.css"/>
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_2540722_niv5x8ehzk.css"/>
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_2540742_qqgjn02bnto.css"/>
+    <script src="https://at.alicdn.com/t/font_2541303_73w9irqbmcm.js?spm=a313x.7781069.1998910419.91&file=font_2541303_73w9irqbmcm.js"></script>
+    <title>空调</title>
+    <style type="text/css">
+      body,main,div,i,p,h1,h2,h3,h4,h5,h6,ul,li,a,span,ul,li{
+        padding:0;
+        margin:0;
+      }
+      html,body,main{
+        width:100%;
+        height:100%;
+        background: #fffbff;
+        overflow: hidden;
+      }
+      .float:after{
+        display:block;
+        content:"";
+        clear:both;
+      }
+      h1{
+        text-align: center;
+        margin-top:120px;
+        font-weight:400;
+        font-size:80px;
+      }
+      .head{
+        width:370px;
+        margin:50px auto;
+      }
+      .head i,.head p{
+        float:left;
+        color:#afadb0;
+        font-size:30px;
+      }
+      .cont{
+        position:relative;
+        width:750px;
+        height:270px;
+        border:2px solid #888;
+        border-radius:20px 20px 50px 50px;
+        margin:auto;
+        box-shadow: 4px 5px 16px #888888;
+      }
+      .tree{
+        position: absolute;
+        left:0;
+        bottom: 40px;
+        width:100%;
+        height:2px;
+        background: #888;
+      }
+      .cont span{
+        position:absolute;
+        display:block;
+        right:29px;
+        bottom: 30px;
+        width:8px;
+        height:8px;
+        border: 1px solid #888;
+        border-radius: 50%;
+        background: #888;
+      }
+      h2{
+        width:220px;
+        line-height:70px;
+        color:#b2b0e1;
+        text-align: center;
+        margin:160px auto 0;
+        font-size:30px;
+        font-weight:normal;
+        border:1px solid #888;
+        border-radius: 10px;
+      }
+      .now{
+        width:460px;
+        list-style: none;
+        margin:50px auto 10px;
+      }
+      .now li{
+        float:left;
+        width:120px;
+        height:120px;
+        background: #475ab9;
+        border-radius: 50%;
+        box-shadow: 4px 6px 20px #888888;
+      }
+      .now li:nth-child(2){
+        background: #59b35c;
+      }
+      .now li:nth-child(3){
+        background: #ffab03;
+      }
+      .now li + li{
+        margin-left:50px;
+      }
+      .now li .iconfont{
+        display:block;
+        font-size:50px;
+        text-align: center;
+        line-height: 120px;
+        color:#fff;
+      }
+      .now li a,.tow li a{
+        text-decoration: none;
+      }
+      .tow{
+        width:120px;
+        margin:70px auto 230px;
+      }
+      .tow li{
+        width:120px;
+        height: 120px;
+        border-radius: 50%;
+        list-style:none;
+        background: #e6e1e8;
+        box-shadow: 4px 6px 20px #888888;
+      }
+      .tow li + li{
+        margin-top:30px;
+      }
+      .tow li .iconfont{
+        display:block;
+        font-size:50px;
+        text-align: center;
+        line-height: 120px;
+        color:#fff;
+      }
+      main > p{
+        text-align: center;
+        font-size:23px;
+        color:#afadb0;
+        line-height: 40px;
+      }
+      .icon {
+        position:absolute;
+        top:-41px;
+        left:24px;
+        width: 150px;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+      
+      .Modal{
+        position:fixed;
+        top:800px;
+        left:50%;
+        display:none;
+        background: rgba(161,31,23,0.8);
+        padding:20px 100px;
+        border-radius: 20px;
+        transform: translateX(-50%);
+        animation: a 1s 1 linear;
+      }
+      .Modal p{
+        font-size:24px;
+        color:#fff;
+      }
+      
+      .wind{
+        position:absolute;
+        top:300px;
+        left:50%;
+        display:none;
+        width:600px;
+        transform: translateX(-50%);
+      }
+      .wind div{
+        width:13px;
+        height:100px;
+        background: #c3c1c4;
+      }
+      .wind .yi{
+        float:left;
+        transform: rotate(16deg);
+      }
+      .wind .er{
+        margin:0 280px;
+      }
+      .wind .san{
+        float:right;
+        transform: translateY(-100px) rotate(-16deg);
+      }
+      .emb{
+        display:none;
+        width:0;
+        height:0;
+      }
+      .content{
+        position:absolute;
+        display: none;
+        top:50px;
+        right:50px;
+      }
+      .content i{
+        display:block;
+        font-size:50px;
+        color:#cff3ff;
+      }
+      .content p{
+        font-size:45px;
+        font-family: '楷体';
+        color:#d6d1d7;
+      }
+      @keyframes a{
+        0%{
+          opacity: 0;
+        }
+        100%{
+          opacity: 1;
+        }
+      }
+      
+      @keyframes  b{
+        0%{
+          opacity: 1;
+        }
+        100%{
+          opacity: 0;
+        }
+      }
+    </style>
+	</head>
+	<body>
+    <main id="main">
+      <h1>便携小空调</h1>
+      <div class="head float">
+        <i class="iconfont icon-dengpao-copy"></i>
+        <p>Tip:  为你的夏日带去清凉</p>
+      </div>
+      <div class="cont">
+        <div class="box">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-gelilogo"></use>
+          </svg>
+        </div>
+        <div class="content">
+          <i class="iconfont icon-shengdan_xuehua"></i>
+          <p id="font">20 ℃</p>
+        </div>
+        <div class="tree"></div>
+        <span></span>
+        <div class="wind float">
+          <div class="yi"></div>
+          <div class="er"></div>
+          <div class="san"></div>
+        </div>
+      </div>
+      <h2>独立遥控器</h2>
+      <ul class="float now">
+        <li>
+          <a href=""><i class="iconfont icon-shengdan_xuehua"></i></a>
+        </li><li id="se">
+          <a id="click" href=""><i class="iconfont icon-B"></i></a>
+        </li><li>
+          <a id="len" href=""><i class="iconfont icon-taiyang"></i></a>
+        </li>
+      </ul>
+      <ul class="tow">
+        <li>
+          <a id="jia" href=""><i class="iconfont icon-hao"></i></a>
+        </li><li>
+          <a id="jian" href=""><i class="iconfont icon-jian"></i></a>
+        </li>
+      </ul>
+      <p>Since the moment I met you, I couldn't leave you</p>
+      <p>2021 - 12021</p>
+      <audio class="emb" src="1164.wav"></audio>
+      <audio class="emb" src="9360.wav"></audio>
+    </main>
+    <div class="Modal">
+      <p>小岳正在努力开发中...</p>
+    </div>
+    <script type="text/JavaScript">
+      const kai = document.getElementById('click');
+      const se = document.getElementById('se');
+      const len = document.getElementById('len');
+      const model = document.getElementsByClassName('Modal')[0];
+      const span = document.getElementsByTagName('span')[0];
+      const wind = document.getElementsByClassName('wind')[0];
+      const emb = document.getElementsByClassName('emb')[0];
+      const auto = document.getElementsByClassName('emb')[1];
+      const font = document.getElementById('font');
+      const jia = document.getElementById('jia');
+      const jian = document.getElementById('jian');
+      const content = document.getElementsByClassName('content')[0];
+      
+      let index = 20;
+      
+      kai.onclick = function (ep) {
+        if(se.style.backgroundColor == "rgb(233, 9, 97)") {
+          se.style.backgroundColor = '#59b35c';
+          span.style.borderColor = "#888";
+          wind.style.display = 'none';
+          span.style.backgroundColor = "#888";
+          auto.play();
+          emb.pause();
+          emb.load();
+          content.style.display = 'none';
+        } else {
+          se.style.backgroundColor = "#e90961"
+          span.style.borderColor = "#7ae33e";
+          span.style.backgroundColor = "#7ae33e";
+          wind.style.display = 'block';
+          emb.play();
+          auto.play();
+          content.style.display = 'block';
+        }
+        ep.preventDefault()
+      }
+      
+      len.onclick = function (ep) {
+        if(model.style.display != 'block'){
+          model.style.animationName = 'a';
+          model.style.display = 'block';
+          setTimeout(function () {
+            han();
+          }, 2000);
+        }
+        function han() {
+          model.style.animationName = 'b';
+          setTimeout(function () {
+            model.style.display = 'none';
+            model.style.animationName = 'c';
+          }, 900);
+        }
+        ep.preventDefault();
+      }
+      
+      jia.onclick = function (ep) {
+        index++;
+        if(index >= 26) {
+          index = 26;
+        }
+        font.innerText = index + ' ℃';
+        ep.preventDefault();
+      }
+      
+      jian.onclick = function (ep) {
+        index--;
+        if(index <= 16) {
+          index = 16;
+        }
+        font.innerText = index + ' ℃';
+        
+        ep.preventDefault();
+      }
+    </script>
+	</body>
+</html>
